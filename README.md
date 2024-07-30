@@ -33,3 +33,28 @@ Website - https:/sdet.live
 
 https://github.com/PramodDutta/ATB5xWebAutomationFramework/assets/1409610/1bd39751-94e8-4f46-91e4-fd79269f6ee6
 
+## How to add Log4J in the Project ?
+- Add this to the pom.xml
+```<dependency>
+      <groupId>org.apache.logging.log4j</groupId>
+      <artifactId>log4j-core</artifactId>
+      <version>3.0.0-beta2</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-api -->
+    <dependency>
+      <groupId>org.apache.logging.log4j</groupId>
+      <artifactId>log4j-api</artifactId>
+      <version>3.0.0-beta2</version>
+    </dependency> 
+```
+- Add log4j2.xml in the main folder -> resource
+- https://gist.github.com/PramodDutta/36ec0a2460e0ec796b7fe6b186a008b5
+- To your Code
+```
+-     private static final Logger logger = LogManager.getLogger(TestVWOLogin_PF_DM.class);
+    
+file
+logger.info("Starting Test");
+
+```

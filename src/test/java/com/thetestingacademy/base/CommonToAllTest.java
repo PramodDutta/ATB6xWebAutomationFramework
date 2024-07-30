@@ -12,10 +12,12 @@ public class CommonToAllTest {
     @BeforeMethod
     public void setup(){
         DriverManager.init();
+//        DriverManagerSelenoid.init();
     }
 
     @AfterMethod
     public void tearDown(){
         DriverManager.down();
+//        DriverManagerSelenoid.down();
     }
 }

@@ -1,6 +1,5 @@
 package com.thetestingacademy.base;
 
-import com.thetestingacademy.driver.DriverManager;
 import com.thetestingacademy.utils.PropertyReader;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -10,7 +9,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.io.FileNotFoundException;
 import java.time.Duration;
 
-import static com.thetestingacademy.driver.DriverManager.getDriver;
+//import static com.thetestingacademy.driver.DriverManager.getDriver;
+import static com.thetestingacademy.driver.DriverManagerSelenoid.getDriver;
 
 public class CommonToAllPage {
 // If you want to call something before every Page Object Class call, Put your Code here")
